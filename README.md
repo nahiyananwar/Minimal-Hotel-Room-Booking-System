@@ -97,5 +97,7 @@ The frontend will run on `http://localhost:5173`
 - `/booking-summary` - View booking statistics
 
 ## Screenshots
-
-![Dashboard](./Screenshots/dashboard.png)(./Screenshots/rooms.png)(./Screenshots/summary.png)(./Screenshots/room_booking.png)
+![Dashboard](./Screenshots/dashboard.png)
+![Rooms](./Screenshots/rooms.png)
+![Summary](./Screenshots/summary.png)
+![Booking](./Screenshots/room_booking.png)
