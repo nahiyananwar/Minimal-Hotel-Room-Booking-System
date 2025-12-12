@@ -22,6 +22,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/rooms', roomRoutes);
 app.use('/api/bookings', bookingRoutes);
 
+// Root route
+app.get('/', (req: Request, res: Response) => {
+    res.status(200).json({
+        success: true,
+        message: 'Welcome to the Hotel Room Booking System API',
+        version: '1.0.0'
+    });
+});
+
 // Health check endpoint
 app.get('/api/health', (req: Request, res: Response) => {
     res.status(200).json({
