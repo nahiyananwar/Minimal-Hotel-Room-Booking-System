@@ -10,12 +10,6 @@ A full-stack hotel room booking system built with React + TypeScript + Tailwind 
 - **Responsive Design**: Works on mobile, tablet, and desktop
 - **Toast Notifications**: User-friendly feedback for all actions
 
-## Screenshots
-
-<!-- Add your screenshots here -->
-![Dashboard](./Screenshots/dashboard.png)
-
-
 ## Tech Stack
 
 ### Frontend
@@ -102,3 +96,6 @@ The frontend will run on `http://localhost:5173`
 - `/create-room` - Add a new room
 - `/booking-summary` - View booking statistics
 
+## Screenshots
+
+![Dashboard](./Screenshots/dashboard.png)(./Screenshots/rooms.png)(./Screenshots/summary.png)(./Screenshots/room_booking.png)
