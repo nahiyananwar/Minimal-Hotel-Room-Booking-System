@@ -24,7 +24,7 @@ export const roomsApi = createApi({
         // Get single room by ID
         getRoomById: builder.query<ApiResponse<Room>, string>({
             query: (id) => `/rooms/${id}`,
-            providesTags: (result, error, id) => [{ type: 'Room', id }],
+            providesTags: (_result, _error, id) => [{ type: 'Room', id }],
         }),
 
         // Create a new room
@@ -44,7 +44,7 @@ export const roomsApi = createApi({
                 method: 'PUT',
                 body: data,
             }),
-            invalidatesTags: (result, error, { id }) => [
+            invalidatesTags: (_result, _error, { id }) => [
                 { type: 'Room', id },
                 { type: 'Room', id: 'LIST' },
             ],
