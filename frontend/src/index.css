@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Custom styles */
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+/* Form focus states */
+input:focus, select:focus, textarea:focus {
+  @apply outline-none ring-2 ring-blue-500 border-transparent;
+}
+
+/* Toast override for dark mode */
+.toast-container {
+  @apply text-sm;
+}
