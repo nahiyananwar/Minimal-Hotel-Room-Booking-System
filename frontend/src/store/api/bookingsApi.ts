@@ -3,7 +3,7 @@ import type { Booking, BookingSummary, CreateBookingData, ApiResponse } from '..
 
 export const bookingsApi = createApi({
     reducerPath: 'bookingsApi',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/api' }),
+    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api' }),
     tagTypes: ['Booking', 'Summary'],
     endpoints: (builder) => ({
         // Get all bookings

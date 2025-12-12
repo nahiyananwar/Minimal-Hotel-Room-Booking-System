@@ -3,7 +3,7 @@ import type { Room, CreateRoomData, UpdateRoomData, ApiResponse } from '../../ty
 
 export const roomsApi = createApi({
     reducerPath: 'roomsApi',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/api' }),
+    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api' }),
     tagTypes: ['Room'],
     endpoints: (builder) => ({
         // Get all rooms with optional pagination
